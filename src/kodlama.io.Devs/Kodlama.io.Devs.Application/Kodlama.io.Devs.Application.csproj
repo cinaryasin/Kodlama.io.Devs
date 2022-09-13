@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Constants\" />
+    <Folder Include="Features\ProgrammingLanguagesFeature\Constants\" />
   </ItemGroup>
 
   <ItemGroup>

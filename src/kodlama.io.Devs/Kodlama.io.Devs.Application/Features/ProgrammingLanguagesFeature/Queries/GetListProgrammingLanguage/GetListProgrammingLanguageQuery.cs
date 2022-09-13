@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Core.Application.Requests;
-using Kodlama.io.Devs.Application.Features.Models;
+using Kodlama.io.Devs.Application.Features.ProgrammingLanguagesFeature.Models;
 using Kodlama.io.Devs.Application.Services.Repositories;
 using MediatR;
 using System;
@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Kodlama.io.Devs.Application.Features.Queries.GetListProgrammingLanguage
+namespace Kodlama.io.Devs.Application.Features.ProgrammingLanguagesFeature.Queries.GetListProgrammingLanguage
 {
     public class GetListProgrammingLanguageQuery:IRequest<ProgrammingLanguageListModel>
     {

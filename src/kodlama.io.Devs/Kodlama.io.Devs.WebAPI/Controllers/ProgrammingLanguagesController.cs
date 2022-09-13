@@ -1,10 +1,9 @@
-﻿using Core.Application.Requests;
-using Kodlama.io.Devs.Application.Features.Commands.CreateProgrammingLanguage;
-using Kodlama.io.Devs.Application.Features.Dtos;
-using Kodlama.io.Devs.Application.Features.Models;
-using Kodlama.io.Devs.Application.Features.Queries.GetListProgrammingLanguage;
-using MediatR;
-using Microsoft.AspNetCore.Http;
+﻿
+using Core.Application.Requests;
+using Kodlama.io.Devs.Application.Features.ProgrammingLanguagesFeature.Commands.CreateProgrammingLanguage;
+using Kodlama.io.Devs.Application.Features.ProgrammingLanguagesFeature.Dtos;
+using Kodlama.io.Devs.Application.Features.ProgrammingLanguagesFeature.Models;
+using Kodlama.io.Devs.Application.Features.ProgrammingLanguagesFeature.Queries.GetListProgrammingLanguage;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Kodlama.io.Devs.WebAPI.Controllers

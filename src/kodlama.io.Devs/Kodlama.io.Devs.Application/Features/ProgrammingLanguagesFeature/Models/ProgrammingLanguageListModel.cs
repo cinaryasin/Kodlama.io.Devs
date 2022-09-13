@@ -1,12 +1,12 @@
 ﻿using Core.Persistence.Paging;
-using Kodlama.io.Devs.Application.Features.Dtos;
+using Kodlama.io.Devs.Application.Features.ProgrammingLanguagesFeature.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Kodlama.io.Devs.Application.Features.Models
+namespace Kodlama.io.Devs.Application.Features.ProgrammingLanguagesFeature.Models
 {
     public class ProgrammingLanguageListModel:BasePageableModel
     {

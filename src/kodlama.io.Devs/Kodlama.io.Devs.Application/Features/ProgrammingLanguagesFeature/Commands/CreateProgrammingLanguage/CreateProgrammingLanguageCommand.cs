@@ -1,16 +1,11 @@
 ﻿using AutoMapper;
-using Kodlama.io.Devs.Application.Features.Dtos;
-using Kodlama.io.Devs.Application.Features.Rules;
+using Kodlama.io.Devs.Application.Features.ProgrammingLanguagesFeature.Dtos;
+using Kodlama.io.Devs.Application.Features.ProgrammingLanguagesFeature.Rules;
 using Kodlama.io.Devs.Application.Services.Repositories;
-using Kodlama.io.Devs.Domain.Entities;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Kodlama.io.Devs.Domain.Entities;
 
-namespace Kodlama.io.Devs.Application.Features.Commands.CreateProgrammingLanguage
+namespace Kodlama.io.Devs.Application.Features.ProgrammingLanguagesFeature.Commands.CreateProgrammingLanguage
 {
     public class CreateProgrammingLanguageCommand : IRequest<CreatedProgrammingLanguageDto>
     {
