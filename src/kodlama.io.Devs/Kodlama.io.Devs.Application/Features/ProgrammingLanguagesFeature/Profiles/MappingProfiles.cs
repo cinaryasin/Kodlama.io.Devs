@@ -14,7 +14,9 @@ namespace Kodlama.io.Devs.Application.Features.ProgrammingLanguagesFeature.Profi
             CreateMap<ProgrammingLanguage, CreatedProgrammingLanguageDto>().ReverseMap();
             CreateMap<ProgrammingLanguage, CreateProgrammingLanguageCommand>().ReverseMap();
             CreateMap<IPaginate<ProgrammingLanguage>, ProgrammingLanguageListModel>().ReverseMap();
-            CreateMap<ProgrammingLanguage, ProgrammingLanguageListDto>().ReverseMap();
+            CreateMap<ProgrammingLanguage, ListProgrammingLanguageDto>().ReverseMap();
+            CreateMap<ProgrammingLanguage, GetByIdProgrammingLanguageDto>().ReverseMap();
+
         }
     }
 }
