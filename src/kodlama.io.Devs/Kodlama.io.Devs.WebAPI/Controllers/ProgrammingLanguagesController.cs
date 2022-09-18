@@ -1,6 +1,8 @@
 ﻿
 using Core.Application.Requests;
 using Kodlama.io.Devs.Application.Features.ProgrammingLanguagesFeature.Commands.CreateProgrammingLanguage;
+using Kodlama.io.Devs.Application.Features.ProgrammingLanguagesFeature.Commands.DeleteProgrammingLanguage;
+using Kodlama.io.Devs.Application.Features.ProgrammingLanguagesFeature.Commands.UpdateProgrammingLanguage;
 using Kodlama.io.Devs.Application.Features.ProgrammingLanguagesFeature.Dtos;
 using Kodlama.io.Devs.Application.Features.ProgrammingLanguagesFeature.Models;
 using Kodlama.io.Devs.Application.Features.ProgrammingLanguagesFeature.Queries.GetByIdProgrammingLanguage;
@@ -27,11 +29,23 @@ namespace Kodlama.io.Devs.WebAPI.Controllers
             GetByIdProgrammingLanguageDto result = await Mediator.Send(getByIdProgrammingLanguage);
             return Ok(result);
         }
-        [HttpPost]
+        [HttpPost("Add")]
         public async Task<IActionResult> Add([FromBody] CreateProgrammingLanguageCommand createProgrammingLanguageCommand)
         {
             CreatedProgrammingLanguageDto result = await Mediator.Send(createProgrammingLanguageCommand);
             return Created("", result);
+        }
+        [HttpPost("Update")]
+        public async Task<IActionResult> Update([FromBody] UpdateProgrammingLanguageCommend updateProgrammingLanguageCommend)
+        {
+            UpdateProgrammingLanguageDto result = await Mediator.Send(updateProgrammingLanguageCommend);
+            return Ok(result);
+        }
+        [HttpPost("Delete")]
+        public async Task<IActionResult> Delete([FromBody] DeleteProgrammingLanguageCommand deleteProgrammingLanguageCommand)
+        {
+            DeleteProgrammingLanguageDto result = await Mediator.Send(deleteProgrammingLanguageCommand);
+            return Ok(result);
         }
     }
 }
